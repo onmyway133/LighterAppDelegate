@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'LighterAppDelegate_Example', :exclusive => true do
+  pod "LighterAppDelegate", :path => "../"
+end
+
+target 'LighterAppDelegate_Tests', :exclusive => true do
+  pod "LighterAppDelegate", :path => "../"
+
+  
+end
