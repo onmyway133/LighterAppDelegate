@@ -1,0 +1,25 @@
+{
+  "name": "LighterAppDelegate",
+  "version": "0.1.0",
+  "summary": "A short description of LighterAppDelegate.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LighterAppDelegate",
+  "license": "MIT",
+  "authors": {
+    "Khoa Pham": "onmyway133@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/LighterAppDelegate.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "LighterAppDelegate": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

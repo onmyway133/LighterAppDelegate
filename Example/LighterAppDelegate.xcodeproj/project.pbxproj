@@ -15,6 +15,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		D27CC1C01C4961AF001EC083 /* RootService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27CC1BF1C4961AF001EC083 /* RootService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		861CFE7D47210D6B77A32DD3 /* Pods-LighterAppDelegate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LighterAppDelegate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LighterAppDelegate_Tests/Pods-LighterAppDelegate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		98B475F79F0CEE9F10513809 /* Pods-LighterAppDelegate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LighterAppDelegate_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LighterAppDelegate_Tests/Pods-LighterAppDelegate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C7B48B4A35AAC0B6BDE8B522 /* Pods-LighterAppDelegate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LighterAppDelegate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LighterAppDelegate_Example/Pods-LighterAppDelegate_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D27CC1BF1C4961AF001EC083 /* RootService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootService.swift; sourceTree = "<group>"; };
 		E549994AACA16F98F3B23F3D /* Pods-LighterAppDelegate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LighterAppDelegate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LighterAppDelegate_Example/Pods-LighterAppDelegate_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E995B391B6B29913EB2645EE /* Pods_LighterAppDelegate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LighterAppDelegate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 		607FACD21AFB9204008FA782 /* Example for LighterAppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				D27CC1BF1C4961AF001EC083 /* RootService.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -211,7 +214,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = CocoaPods;
+				ORGANIZATIONNAME = Fantageek;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				D27CC1C01C4961AF001EC083 /* RootService.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

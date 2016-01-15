@@ -1,0 +1,6 @@
+framework module LighterAppDelegate {
+  umbrella header "LighterAppDelegate-umbrella.h"
+
+  export *
+  module * { export * }
+}

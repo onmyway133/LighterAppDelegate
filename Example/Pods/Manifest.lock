@@ -1,0 +1,14 @@
+PODS:
+  - LighterAppDelegate (0.1.0)
+
+DEPENDENCIES:
+  - LighterAppDelegate (from `../`)
+
+EXTERNAL SOURCES:
+  LighterAppDelegate:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LighterAppDelegate: 3f6a4a9142306e50d8c36b55e65e21e12097e824
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,6 @@
+framework module Pods_LighterAppDelegate_Tests {
+  umbrella header "Pods-LighterAppDelegate_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
