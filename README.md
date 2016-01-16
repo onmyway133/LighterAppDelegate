@@ -15,6 +15,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ### Dispatching events
 
 - See [Lighter AppDelegate](http://www.fantageek.com/blog/2015/10/31/lighter-appdelegate/)
+- You can use either by composition or protocol conformance
 - Dispatching `UIApplicationDelegate` events into specific `Service` class. We can have RootService, DebugService, AnalyticsService, ...
 
 ```swift
