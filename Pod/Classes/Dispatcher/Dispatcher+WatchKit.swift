@@ -10,6 +10,7 @@ import Foundation
 
 // Interacting With WatchKit
 public extension Dispatcher {
+    @available(iOS 8.2, *)
     public func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: ([NSObject : AnyObject]?) -> Void) {
         services.forEach { service in
             service.application?(application, handleWatchKitExtensionRequest: userInfo, reply: reply)
