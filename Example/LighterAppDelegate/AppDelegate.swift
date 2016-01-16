@@ -10,7 +10,7 @@ import UIKit
 import LighterAppDelegate
 
 /*
-// Inheritance
+// Protocol Conformance 
 @UIApplicationMain
 class AppDelegate: UIResponder, LighterAppDelegate {
 

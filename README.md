@@ -62,11 +62,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-### Inheritance
+### Protocol Conformance
 
 - Conform to protocol `LighterAppDelegate`
 - Implement `dispatcher()`
-- `LighterAppDelegate` has protocol extension with default implementations for `App State Changes` and `URL` events, which is suitable for common usage. 
+- `LighterAppDelegate` has protocol extension with default implementations for `App State Changes` and `URL` events, which is suitable for common usage.
+- If you want to receive more events, add more functions inside your AppDelegate and dispatch to your `Dispatcher`
 
 ```swift
 @UIApplicationMain
@@ -84,6 +85,20 @@ class AppDelegate: UIResponder, LighterAppDelegate {
     }
 }
 ```
+
+### Warning
+
+- Only implement `UIApplicationDelegate` functions in case you truly need. Unnecessary functions can cause problems
+
+> You've implemented -[ application:performFetchWithCompletionHandler:], but you still need to add "fetch" to the list of your supported UIBackgroundModes in your Info.plist.
+
+> You've implemented -[ application:didReceiveRemoteNotification:fetchCompletionHandler:], but you still need to add "remote-notification" to the list of your supported UIBackgroundModes in your Info.plist.
+
+- Involving `remoteNotification` events also consider your app to [support Push Notification](https://forums.developer.apple.com/thread/15011)
+
+> Your app appears to include API used to register with the Apple Push Notification service, but the app signature's entitlements do not include the "aps-environment" entitlement
+
+- I see that this is problem in case you implement `UIApplicationDelegate` functions inside your AppDelegate. This is not a problem with `LighterAppDelegate` since functions are implemented in its protocol extension !!
 
 ## Installation
 
