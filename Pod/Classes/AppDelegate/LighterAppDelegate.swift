@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol LighterAppDelegate: UIApplicationDelegate {
-    func dispatcher() -> Dispatcher
-}
+public class LighterAppDelegate: UIResponder, UIApplicationDelegate {
+    public func dispatcher() -> Dispatcher {
+        fatalError("Subclass must override")
+    }
 
-public extension LighterAppDelegate {
     // MARK: AppStateChanges
     public func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         return dispatcher().application(application, willFinishLaunchingWithOptions: launchOptions)

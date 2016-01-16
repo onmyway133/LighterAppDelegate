@@ -9,15 +9,14 @@
 import UIKit
 import LighterAppDelegate
 
-/*
-// Protocol Conformance 
+// Inheritance 
 @UIApplicationMain
-class AppDelegate: UIResponder, LighterAppDelegate {
+class AppDelegate: LighterAppDelegate {
 
     var window: UIWindow?
     let simpleDispatcher = Dispatcher(services: [RootService()])
 
-    func dispatcher() -> Dispatcher {
+    override func dispatcher() -> Dispatcher {
         return simpleDispatcher
     }
 
@@ -25,8 +24,8 @@ class AppDelegate: UIResponder, LighterAppDelegate {
         dispatcher().applicationDidReceiveMemoryWarning(application)
     }
 }
-*/
 
+/*
 // Composition
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -35,6 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let dispatcher = Dispatcher(services: [RootService()])
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        print(dispatcher)
         return dispatcher.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 }
+*/
